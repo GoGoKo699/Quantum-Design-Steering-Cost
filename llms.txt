@@ -1,0 +1,112 @@
+# Quantum Design Steering Cost
+
+This repository determines the minimum initial quantum Fisher information of a
+finite independent reference needed to prepare some weighted exact state
+2-design on an untouched entangled partner by a charge-conserving measurement.
+The exact cost is 4 D V_A, where V_A is the variance of Q_A in I/D. A finite
+count-and-phase construction attains it for every finite charge spectrum.
+
+## Canonical scientific files
+
+- README.md: physical question, result table, scientific and learning routes,
+  reproduction command, scope, and purpose/contact notice.
+- science/README.md: connected route through the full scientific account.
+- science/model.md: systems and charges, independent reference, invariant
+  measurement effects, retained neutral record, QFI convention, exact target,
+  quantifiers, and the exact optimum.
+- science/reference_bound.md: adjustable-generator QFI data-processing proof,
+  mixed-reference and mixed-output harmonic bound, pure-ensemble variance
+  consequence, and exact-design lower bound.
+- science/conserving_construction.md: count sectors, finite phase POVM, complete
+  outcomes, charge-conserving unitary dilation, charge-intertwining reference
+  compression, exact attainment, and the qubit specialization.
+- science/accuracy.md: finite-K moment tensor, additive error, balanced-charge
+  multiplicative counterexample, mixed-output impurity bound, and support
+  restrictions imposed by multiplicative moment control.
+- science/measurement_geometry.md: effective POVM and transpose convention,
+  established tight rank-one IC/design/Fisher-symmetry equivalence, finite-K
+  Fisher spectrum, two-sided relative isotropy, and one-sided information bounds.
+- science/interpretation.md: physical meaning of remote access, comparison
+  with direct control, reference versus output QFI, qubit scaling, and resource
+  and accuracy boundaries.
+- references/RELATED_WORK.md: primary attribution, closest model comparisons,
+  inherited ingredients, the matched physical optimization, and limits of the
+  literature comparison.
+- references/references.bib: bibliographic records and consulted source versions.
+- verification/README.md: runnable commands, expected finite checks, and their
+  evidential limits.
+- verification/run_all.py: complete exact and numerical verification runner.
+- verification/results.json: recorded finite-check results and environment.
+
+## Learning files
+
+- learning/MILESTONES.md: the single project-defined map M01 through M30,
+  with M01-M13 for background/preliminaries and M14-M30 for narrative/innovation. Each
+  milestone has a question, understanding target, earlier dependencies,
+  conceptual connection, and canonical source pointers.
+- learning/WATROUS_BRIDGE.md: the single selected educational anchor, John
+  Watrous's The Theory of Quantum Information (2018), using the author's
+  posted pre-publication manuscript. Contains source sections, notation and
+  convention mapping, a worked example, and locally supplied steps into the
+  reference-cost argument.
+
+## Reader routes
+
+- Story: science/README.md -> science/model.md -> the bound and construction
+  pages -> science/interpretation.md. Use the accuracy and geometry pages to
+  understand which conclusions survive a change of target.
+- Study: learning/WATROUS_BRIDGE.md alongside M01-M30 in learning/MILESTONES.md.
+  The map is defined by the project and does not record a reader's progress.
+- Theorem audit: read the exact model and quantifiers first; follow the complete
+  converse and construction, including finite apparatus feasibility and the
+  cited research dependencies. Introductory explanations do not replace proofs.
+- Approximation audit: distinguish half trace-norm moment error, a multiplicative
+  positive-semidefinite moment sandwich, two-sided Fisher isotropy, and a
+  one-sided lower bound on useful classical information.
+- Reproduction: read verification/README.md, install its pinned requirement,
+  and run the documented command. Distinguish a fresh execution from the
+  committed result report.
+
+## Scientific distinctions to preserve
+
+- A is untouched. Only B and an independent reference R are measured. Every
+  effect commutes with Q_B + Q_R, each record is neutral, and every outcome is
+  retained. Count every accessible preparation flag and initial asymmetry in R.
+- The optimum ranges over some weighted exact complex projective state
+  2-design and all allowed finite apparatuses. It does not assert the same
+  realization for each prescribed SIC, MUB measurement, or Haar ensemble.
+- The reference may be consumed. Arbitrary collective conserving interactions
+  and neutral classical randomness are allowed. QFI is the optimized resource;
+  gate complexity, locality, dimension, mean energy, and return conditions are
+  different resource questions.
+- F_Q equals four times the generator variance for a pure state; that identity
+  is generally false for a mixed state. Use the SLD definition and the stated
+  data-processing or convex-roof arguments where required.
+- The average conditional output QFI obeys the harmonic bound
+  4 V_A F_R / (4 V_A + F_R). The zero-over-zero case is defined as zero.
+- The finite-K construction costs 4 (K-1) V_A and is an exact design at K=D+1.
+  Increasing K beyond that point does not monotonically improve its moment.
+- The m 2^m excitation-qubit cost is for exact design preparation. Fixed positive
+  additive error has a low-cost construction, and a balanced-charge example
+  disproves a universal dimension factor at fixed multiplicative moment error.
+- The order-D V_A approximate Fisher-isotropy result assumes exactly rank-one
+  effects, two-sided relative control, and local estimation at I/D. One-sided
+  useful-information guarantees are cheaper; there is no generic tomography
+  lower bound here.
+- The direct-control comparison gives an explicit protocol of cost 4 V_A;
+  it does not establish that protocol's optimality over all direct-control tasks.
+- Arbitrary finite real charges generate time translations. Compact U(1)
+  requires a common system-apparatus charge lattice after scalar shifts.
+  The attaining reference shares the system's lattice whenever one exists.
+- Scalar charge and D=1 are trivial zero-cost cases. Respect the stated D>=2
+  domain of the measurement-geometry discussion.
+- QFI monotonicity, finite-reference metrology, convex-roof QFI, ensemble
+  steering, phase/amplitude design methods, and tight-IC/Fisher equivalence
+  are inherited ingredients. Read the source comparison before attributing
+  originality to any intermediate step.
+- Watrous supplies the selected foundations. The reference-cost model, QFI
+  bridge, optimal conserving construction, and accuracy analysis are supplied
+  locally with primary research attribution. Other research citations are
+  not additional assigned educational anchors.
+- Finite checks establish their stated identities and examples. They neither
+  replace all-dimensional proofs nor certify novelty or external peer review.
