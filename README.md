@@ -52,6 +52,21 @@ Start with the [scientific overview](science/README.md) or go directly to the [m
 
 The design/measurement equivalence is established work: weighted projective 2-designs correspond to tight rank-one informationally complete POVMs, and their local Fisher information at $I/D$ is symmetric. The present optimization assigns a physical reference cost to implementing some measurement in that class.
 
+## Learn the project
+
+The single educational anchor is John Watrous's *The Theory of Quantum Information* (2018), using the author's posted pre-publication manuscript. The [Watrous bridge](learning/WATROUS_BRIDGE.md) identifies the relevant sections, translates notation, and supplies the steps from quantum measurements and Haar moments to the conserving-reference problem.
+
+The [30-milestone understanding map](learning/MILESTONES.md) follows the project's scientific story through 13 background/preliminaries milestones and 17 narrative/innovation milestones. Each milestone states a central question, an understanding target, earlier dependencies, a conceptual connection, and source pointers. Use the bridge alongside the map; the topic-based scientific pages remain authoritative for complete statements and proofs.
+
+| Reading intention | Starting route |
+| --- | --- |
+| Understand the physical question and the result | [Scientific overview](science/README.md), then [physical interpretation](science/interpretation.md) |
+| Build the required foundations and follow the argument | [Watrous bridge](learning/WATROUS_BRIDGE.md) with [M01–M30](learning/MILESTONES.md) |
+| Audit the exact optimum | [Operational model](science/model.md), [converse](science/reference_bound.md), and [attaining construction](science/conserving_construction.md) |
+| Assess approximate or statistical claims | [Accuracy and purity](science/accuracy.md), then [measurement geometry](science/measurement_geometry.md) |
+
+The [reading guide](llms.txt) maps scientific questions to their canonical files. Primary research sources remain available for attribution and proof dependencies alongside the one educational anchor.
+
 ## Reproduce the finite checks
 
 From the repository root:

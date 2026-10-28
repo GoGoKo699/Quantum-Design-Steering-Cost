@@ -24,3 +24,5 @@ For a direct theorem audit, read the operational model, Theorem 1 and Theorem 3 
 The second-moment error and relative Fisher error are different objects. Their distinction is necessary for assessing the strength of any approximate statement. The balanced-charge example in the accuracy page supplies an explicit counterexample to a universal fixed-multiplicative-error dimension factor.
 
 The [source comparison](../references/RELATED_WORK.md) identifies inherited methods and the matched apparatus optimization. The [verification guide](../verification/README.md) documents exact rational checks and finite matrix calculations. These calculations support the formulas and implementation; the general results rest on the written proofs.
+
+For a learning route, use the [Watrous bridge](../learning/WATROUS_BRIDGE.md) alongside the [30-milestone understanding map](../learning/MILESTONES.md). The bridge connects the selected textbook foundations to this model and its proof mechanisms; the scientific pages above retain the complete statements and derivations.
