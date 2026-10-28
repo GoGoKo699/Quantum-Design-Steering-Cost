@@ -1,0 +1,763 @@
+{
+  "status": "passed",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "floating_tolerance": 1e-12,
+  "counts": {
+    "exact_multinomial_cases": 31,
+    "explicit_povm_cases": 7,
+    "mixed_reference_cases": 4,
+    "fisher_frame_cases": 5,
+    "balanced_block_cases": 14
+  },
+  "exact_results": [
+    {
+      "q": [
+        0
+      ],
+      "K": 1,
+      "D": 1,
+      "V_A": "0",
+      "V_R": "0",
+      "output_charge_variance": "0",
+      "half_trace_moment_error": "0",
+      "exact_design": true,
+      "charge_support": 1
+    },
+    {
+      "q": [
+        0
+      ],
+      "K": 2,
+      "D": 1,
+      "V_A": "0",
+      "V_R": "0",
+      "output_charge_variance": "0",
+      "half_trace_moment_error": "0",
+      "exact_design": true,
+      "charge_support": 1
+    },
+    {
+      "q": [
+        0
+      ],
+      "K": 3,
+      "D": 1,
+      "V_A": "0",
+      "V_R": "0",
+      "output_charge_variance": "0",
+      "half_trace_moment_error": "0",
+      "exact_design": true,
+      "charge_support": 1
+    },
+    {
+      "q": [
+        2,
+        2
+      ],
+      "K": 1,
+      "D": 2,
+      "V_A": "0",
+      "V_R": "0",
+      "output_charge_variance": "0",
+      "half_trace_moment_error": "1/3",
+      "exact_design": false,
+      "charge_support": 1
+    },
+    {
+      "q": [
+        2,
+        2
+      ],
+      "K": 2,
+      "D": 2,
+      "V_A": "0",
+      "V_R": "0",
+      "output_charge_variance": "0",
+      "half_trace_moment_error": "1/12",
+      "exact_design": false,
+      "charge_support": 1
+    },
+    {
+      "q": [
+        2,
+        2
+      ],
+      "K": 3,
+      "D": 2,
+      "V_A": "0",
+      "V_R": "0",
+      "output_charge_variance": "0",
+      "half_trace_moment_error": "0",
+      "exact_design": true,
+      "charge_support": 1
+    },
+    {
+      "q": [
+        2,
+        2
+      ],
+      "K": 4,
+      "D": 2,
+      "V_A": "0",
+      "V_R": "0",
+      "output_charge_variance": "0",
+      "half_trace_moment_error": "1/24",
+      "exact_design": false,
+      "charge_support": 1
+    },
+    {
+      "q": [
+        0,
+        1
+      ],
+      "K": 1,
+      "D": 2,
+      "V_A": "1/4",
+      "V_R": "0",
+      "output_charge_variance": "1/4",
+      "half_trace_moment_error": "1/3",
+      "exact_design": false,
+      "charge_support": 1
+    },
+    {
+      "q": [
+        0,
+        1
+      ],
+      "K": 2,
+      "D": 2,
+      "V_A": "1/4",
+      "V_R": "1/4",
+      "output_charge_variance": "1/8",
+      "half_trace_moment_error": "1/12",
+      "exact_design": false,
+      "charge_support": 2
+    },
+    {
+      "q": [
+        0,
+        1
+      ],
+      "K": 3,
+      "D": 2,
+      "V_A": "1/4",
+      "V_R": "1/2",
+      "output_charge_variance": "1/12",
+      "half_trace_moment_error": "0",
+      "exact_design": true,
+      "charge_support": 3
+    },
+    {
+      "q": [
+        0,
+        1
+      ],
+      "K": 4,
+      "D": 2,
+      "V_A": "1/4",
+      "V_R": "3/4",
+      "output_charge_variance": "1/16",
+      "half_trace_moment_error": "1/24",
+      "exact_design": false,
+      "charge_support": 4
+    },
+    {
+      "q": [
+        0,
+        1,
+        2
+      ],
+      "K": 1,
+      "D": 3,
+      "V_A": "2/3",
+      "V_R": "0",
+      "output_charge_variance": "2/3",
+      "half_trace_moment_error": "1/2",
+      "exact_design": false,
+      "charge_support": 1
+    },
+    {
+      "q": [
+        0,
+        1,
+        2
+      ],
+      "K": 2,
+      "D": 3,
+      "V_A": "2/3",
+      "V_R": "2/3",
+      "output_charge_variance": "1/3",
+      "half_trace_moment_error": "1/6",
+      "exact_design": false,
+      "charge_support": 3
+    },
+    {
+      "q": [
+        0,
+        1,
+        2
+      ],
+      "K": 3,
+      "D": 3,
+      "V_A": "2/3",
+      "V_R": "4/3",
+      "output_charge_variance": "2/9",
+      "half_trace_moment_error": "1/18",
+      "exact_design": false,
+      "charge_support": 5
+    },
+    {
+      "q": [
+        0,
+        1,
+        2
+      ],
+      "K": 4,
+      "D": 3,
+      "V_A": "2/3",
+      "V_R": "2",
+      "output_charge_variance": "1/6",
+      "half_trace_moment_error": "0",
+      "exact_design": true,
+      "charge_support": 7
+    },
+    {
+      "q": [
+        0,
+        1,
+        2
+      ],
+      "K": 5,
+      "D": 3,
+      "V_A": "2/3",
+      "V_R": "8/3",
+      "output_charge_variance": "2/15",
+      "half_trace_moment_error": "1/30",
+      "exact_design": false,
+      "charge_support": 9
+    },
+    {
+      "q": [
+        0,
+        2,
+        5
+      ],
+      "K": 1,
+      "D": 3,
+      "V_A": "38/9",
+      "V_R": "0",
+      "output_charge_variance": "38/9",
+      "half_trace_moment_error": "1/2",
+      "exact_design": false,
+      "charge_support": 1
+    },
+    {
+      "q": [
+        0,
+        2,
+        5
+      ],
+      "K": 2,
+      "D": 3,
+      "V_A": "38/9",
+      "V_R": "38/9",
+      "output_charge_variance": "19/9",
+      "half_trace_moment_error": "1/6",
+      "exact_design": false,
+      "charge_support": 3
+    },
+    {
+      "q": [
+        0,
+        2,
+        5
+      ],
+      "K": 3,
+      "D": 3,
+      "V_A": "38/9",
+      "V_R": "76/9",
+      "output_charge_variance": "38/27",
+      "half_trace_moment_error": "1/18",
+      "exact_design": false,
+      "charge_support": 6
+    },
+    {
+      "q": [
+        0,
+        2,
+        5
+      ],
+      "K": 4,
+      "D": 3,
+      "V_A": "38/9",
+      "V_R": "38/3",
+      "output_charge_variance": "19/18",
+      "half_trace_moment_error": "0",
+      "exact_design": true,
+      "charge_support": 10
+    },
+    {
+      "q": [
+        0,
+        2,
+        5
+      ],
+      "K": 5,
+      "D": 3,
+      "V_A": "38/9",
+      "V_R": "152/9",
+      "output_charge_variance": "38/45",
+      "half_trace_moment_error": "1/30",
+      "exact_design": false,
+      "charge_support": 15
+    },
+    {
+      "q": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "K": 1,
+      "D": 4,
+      "V_A": "1/4",
+      "V_R": "0",
+      "output_charge_variance": "1/4",
+      "half_trace_moment_error": "3/5",
+      "exact_design": false,
+      "charge_support": 1
+    },
+    {
+      "q": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "K": 2,
+      "D": 4,
+      "V_A": "1/4",
+      "V_R": "1/4",
+      "output_charge_variance": "1/8",
+      "half_trace_moment_error": "9/40",
+      "exact_design": false,
+      "charge_support": 2
+    },
+    {
+      "q": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "K": 3,
+      "D": 4,
+      "V_A": "1/4",
+      "V_R": "1/2",
+      "output_charge_variance": "1/12",
+      "half_trace_moment_error": "1/10",
+      "exact_design": false,
+      "charge_support": 3
+    },
+    {
+      "q": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "K": 5,
+      "D": 4,
+      "V_A": "1/4",
+      "V_R": "1",
+      "output_charge_variance": "1/20",
+      "half_trace_moment_error": "0",
+      "exact_design": true,
+      "charge_support": 5
+    },
+    {
+      "q": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "K": 6,
+      "D": 4,
+      "V_A": "1/4",
+      "V_R": "5/4",
+      "output_charge_variance": "1/24",
+      "half_trace_moment_error": "1/40",
+      "exact_design": false,
+      "charge_support": 6
+    },
+    {
+      "q": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "K": 1,
+      "D": 4,
+      "V_A": "1/2",
+      "V_R": "0",
+      "output_charge_variance": "1/2",
+      "half_trace_moment_error": "3/5",
+      "exact_design": false,
+      "charge_support": 1
+    },
+    {
+      "q": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "K": 2,
+      "D": 4,
+      "V_A": "1/2",
+      "V_R": "1/2",
+      "output_charge_variance": "1/4",
+      "half_trace_moment_error": "9/40",
+      "exact_design": false,
+      "charge_support": 3
+    },
+    {
+      "q": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "K": 3,
+      "D": 4,
+      "V_A": "1/2",
+      "V_R": "1",
+      "output_charge_variance": "1/6",
+      "half_trace_moment_error": "1/10",
+      "exact_design": false,
+      "charge_support": 5
+    },
+    {
+      "q": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "K": 5,
+      "D": 4,
+      "V_A": "1/2",
+      "V_R": "2",
+      "output_charge_variance": "1/10",
+      "half_trace_moment_error": "0",
+      "exact_design": true,
+      "charge_support": 9
+    },
+    {
+      "q": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "K": 6,
+      "D": 4,
+      "V_A": "1/2",
+      "V_R": "5/2",
+      "output_charge_variance": "1/12",
+      "half_trace_moment_error": "1/40",
+      "exact_design": false,
+      "charge_support": 11
+    }
+  ],
+  "povm_results": [
+    {
+      "q": [
+        0
+      ],
+      "K": 2,
+      "povm_defect": 0.0,
+      "steering_defect": 0.0,
+      "moment_defect": 0.0,
+      "normalization": 1.0
+    },
+    {
+      "q": [
+        2,
+        2
+      ],
+      "K": 3,
+      "povm_defect": 7.850462293418876e-17,
+      "steering_defect": 0.0,
+      "moment_defect": 5.388822918106865e-17,
+      "normalization": 0.9999999999999999
+    },
+    {
+      "q": [
+        0,
+        1
+      ],
+      "K": 2,
+      "povm_defect": 2.2216911755642883e-16,
+      "steering_defect": 5.551115123125783e-17,
+      "moment_defect": 5.55111783019649e-17,
+      "normalization": 1.0
+    },
+    {
+      "q": [
+        0,
+        1
+      ],
+      "K": 3,
+      "povm_defect": 2.2216911755642883e-16,
+      "steering_defect": 6.206335383118183e-17,
+      "moment_defect": 5.388822918106865e-17,
+      "normalization": 0.9999999999999999
+    },
+    {
+      "q": [
+        0,
+        1,
+        2
+      ],
+      "K": 4,
+      "povm_defect": 3.33186643264929e-16,
+      "steering_defect": 1.5515838457795457e-17,
+      "moment_defect": 3.6082277335291657e-16,
+      "normalization": 1.0000000000000004
+    },
+    {
+      "q": [
+        0,
+        2,
+        5
+      ],
+      "K": 4,
+      "povm_defect": 3.33186643264929e-16,
+      "steering_defect": 1.3877787807814457e-17,
+      "moment_defect": 3.6082277335291657e-16,
+      "normalization": 1.0000000000000004
+    },
+    {
+      "q": [
+        0,
+        0,
+        1
+      ],
+      "K": 4,
+      "povm_defect": 7.77204399948959e-16,
+      "steering_defect": 1.5515838457795457e-17,
+      "moment_defect": 3.6082277335291657e-16,
+      "normalization": 1.0000000000000004
+    }
+  ],
+  "mixed_reference_results": [
+    {
+      "off_diagonal_reference_coherence": "0",
+      "reference_qfi": 0.0,
+      "average_output_qfi": 0.0,
+      "harmonic_upper_bound": 0.0,
+      "charge_mean_variance": 0.12499999999999997,
+      "average_impurity": 0.2499999999999999,
+      "purity_corrected_lhs": 0.24999999999999992,
+      "purity_corrected_lower_bound": 0.25
+    },
+    {
+      "off_diagonal_reference_coherence": "1/8",
+      "reference_qfi": 0.06249999999999997,
+      "average_output_qfi": 0.031249999999999972,
+      "harmonic_upper_bound": 0.05882352941176468,
+      "charge_mean_variance": 0.12499999999999997,
+      "average_impurity": 0.2343749999999999,
+      "purity_corrected_lhs": 0.24218749999999992,
+      "purity_corrected_lower_bound": 0.23529411764705882
+    },
+    {
+      "off_diagonal_reference_coherence": "1/4",
+      "reference_qfi": 0.2499999999999999,
+      "average_output_qfi": 0.12499999999999989,
+      "harmonic_upper_bound": 0.1999999999999999,
+      "charge_mean_variance": 0.12499999999999997,
+      "average_impurity": 0.18749999999999992,
+      "purity_corrected_lhs": 0.21874999999999994,
+      "purity_corrected_lower_bound": 0.2
+    },
+    {
+      "off_diagonal_reference_coherence": "1/2",
+      "reference_qfi": 0.9999999999999996,
+      "average_output_qfi": 0.49999999999999956,
+      "harmonic_upper_bound": 0.4999999999999999,
+      "charge_mean_variance": 0.12499999999999997,
+      "average_impurity": 0.0,
+      "purity_corrected_lhs": 0.12499999999999997,
+      "purity_corrected_lower_bound": 0.12500000000000003
+    }
+  ],
+  "fisher_results": [
+    {
+      "D": 2,
+      "K": 1,
+      "frame_defect": 1.6653345369377348e-16,
+      "diagonal_eigenvalue": "1/2",
+      "off_diagonal_eigenvalue": "0",
+      "relative_diagonal": "3",
+      "relative_off_diagonal": "0"
+    },
+    {
+      "D": 2,
+      "K": 3,
+      "frame_defect": 8.326672684688674e-17,
+      "diagonal_eigenvalue": "1/6",
+      "off_diagonal_eigenvalue": "1/6",
+      "relative_diagonal": "1",
+      "relative_off_diagonal": "1"
+    },
+    {
+      "D": 3,
+      "K": 2,
+      "frame_defect": 8.326672684688674e-17,
+      "diagonal_eigenvalue": "1/6",
+      "off_diagonal_eigenvalue": "1/18",
+      "relative_diagonal": "2",
+      "relative_off_diagonal": "2/3"
+    },
+    {
+      "D": 3,
+      "K": 4,
+      "frame_defect": 6.938893903907228e-17,
+      "diagonal_eigenvalue": "1/12",
+      "off_diagonal_eigenvalue": "1/12",
+      "relative_diagonal": "1",
+      "relative_off_diagonal": "1"
+    },
+    {
+      "D": 3,
+      "K": 5,
+      "frame_defect": 1.249000902703301e-16,
+      "diagonal_eigenvalue": "1/15",
+      "off_diagonal_eigenvalue": "4/45",
+      "relative_diagonal": "4/5",
+      "relative_off_diagonal": "16/15"
+    }
+  ],
+  "balanced_block_results": [
+    {
+      "D": 2,
+      "K": 1,
+      "V_A": "1",
+      "reference_qfi": 0,
+      "multiplicative_error": "1",
+      "half_trace_error": "1/3"
+    },
+    {
+      "D": 2,
+      "K": 2,
+      "V_A": "1",
+      "reference_qfi": 4,
+      "multiplicative_error": "1/4",
+      "half_trace_error": "1/12"
+    },
+    {
+      "D": 2,
+      "K": 3,
+      "V_A": "1",
+      "reference_qfi": 8,
+      "multiplicative_error": "0",
+      "half_trace_error": "0"
+    },
+    {
+      "D": 2,
+      "K": 4,
+      "V_A": "1",
+      "reference_qfi": 12,
+      "multiplicative_error": "1/8",
+      "half_trace_error": "1/24"
+    },
+    {
+      "D": 4,
+      "K": 1,
+      "V_A": "1",
+      "reference_qfi": 0,
+      "multiplicative_error": "1",
+      "half_trace_error": "2/5"
+    },
+    {
+      "D": 4,
+      "K": 2,
+      "V_A": "1",
+      "reference_qfi": 4,
+      "multiplicative_error": "3/8",
+      "half_trace_error": "3/20"
+    },
+    {
+      "D": 4,
+      "K": 3,
+      "V_A": "1",
+      "reference_qfi": 8,
+      "multiplicative_error": "1/6",
+      "half_trace_error": "1/15"
+    },
+    {
+      "D": 4,
+      "K": 5,
+      "V_A": "1",
+      "reference_qfi": 16,
+      "multiplicative_error": "0",
+      "half_trace_error": "0"
+    },
+    {
+      "D": 4,
+      "K": 6,
+      "V_A": "1",
+      "reference_qfi": 20,
+      "multiplicative_error": "1/24",
+      "half_trace_error": "1/60"
+    },
+    {
+      "D": 8,
+      "K": 1,
+      "V_A": "1",
+      "reference_qfi": 0,
+      "multiplicative_error": "1",
+      "half_trace_error": "4/9"
+    },
+    {
+      "D": 8,
+      "K": 2,
+      "V_A": "1",
+      "reference_qfi": 4,
+      "multiplicative_error": "7/16",
+      "half_trace_error": "7/36"
+    },
+    {
+      "D": 8,
+      "K": 3,
+      "V_A": "1",
+      "reference_qfi": 8,
+      "multiplicative_error": "1/4",
+      "half_trace_error": "1/9"
+    },
+    {
+      "D": 8,
+      "K": 9,
+      "V_A": "1",
+      "reference_qfi": 32,
+      "multiplicative_error": "0",
+      "half_trace_error": "0"
+    },
+    {
+      "D": 8,
+      "K": 10,
+      "V_A": "1",
+      "reference_qfi": 36,
+      "multiplicative_error": "1/80",
+      "half_trace_error": "1/180"
+    }
+  ],
+  "scope": "Finite normalization, conservation-sector feasibility, conditional states, mixed-reference bounds, second moments and Fisher frames. General optimality follows from the written proofs; no priority or expert-review certification is implied."
+}
