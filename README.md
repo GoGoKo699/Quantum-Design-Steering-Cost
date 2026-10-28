@@ -5,7 +5,7 @@ A quantum measurement can prepare random pure states on an entangled partner tha
 Let $A$ have dimension $D$ and charge $Q_A$, and start with a maximally entangled pair $AB$ of fixed total charge. The apparatus acts only on $B$ and an independent reference $R$. Each measurement effect conserves $Q_B+Q_R$, the classical record is neutral, and every outcome is retained. With
 
 $$
-V_A=\operatorname{Var}_{I/D}(Q_A),
+V_A=\mathrm{Var}_{I/D}(Q_A),
 $$
 
 the exact optimum is

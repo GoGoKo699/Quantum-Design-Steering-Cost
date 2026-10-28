@@ -3,7 +3,7 @@
 This account derives the exact reference-coherence cost of generating a state 2-design by measuring only the entangled partner of an untouched system. The result is a minimum over finite conserving apparatuses and some weighted exact design:
 
 $$
-F_{Q,\min}=4D\,\operatorname{Var}_{I/D}(Q_A).
+F_{Q,\min}=4D\,\mathrm{Var}_{I/D}(Q_A).
 $$
 
 The proof combines an established finite-reference information bound with a finite count-and-phase measurement that attains it. The accuracy analysis states which approximations preserve the dimension factor and which do not.

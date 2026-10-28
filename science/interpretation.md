@@ -7,7 +7,7 @@ The exact law $F_{Q,\min}=4DV_A$ concerns the physical realization of a pure-sta
 For a pure ensemble with average $I/D$, define
 
 $$
-v=\operatorname{Var}_x[\langle Q_A\rangle_x].
+v=\mathrm{Var}_x[\langle Q_A\rangle_x].
 $$
 
 The law of total variance gives
@@ -117,7 +117,7 @@ Output purity also has a quantitative role. For arbitrary mixed conditional stat
 
 $$
 v+\frac{(q_{\max}-q_{\min})^2}{2}
-\left(1-\sum_xp_x\operatorname{Tr}\rho_x^2\right)
+\left(1-\sum_xp_x\mathrm{Tr}\rho_x^2\right)
 \geq\frac{V_A^2}{V_A+F_R/4}.
 $$
 

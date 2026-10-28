@@ -11,8 +11,8 @@ $$
 An independent finite reference $R$ may be in any mixed state. Every measurement effect on $BR$ must commute with $Q_B+Q_R$. The protocol leaves $A$ untouched, retains every outcome, and produces a weighted exact complex projective 2-design on $A$. With
 
 $$
-\mu=\frac{\operatorname{Tr}Q_A}{D},\qquad
-V_A=\frac{\operatorname{Tr}(Q_A-\mu I)^2}{D},
+\mu=\frac{\mathrm{Tr}Q_A}{D},\qquad
+V_A=\frac{\mathrm{Tr}(Q_A-\mu I)^2}{D},
 $$
 
 the optimum is
@@ -21,7 +21,7 @@ $$
 \min F_Q(\rho_R,Q_R)=4DV_A.
 $$
 
-Here $F_Q$ is the symmetric logarithmic derivative quantum Fisher information, normalized so that $F_Q(|r\rangle,Q_R)=4\operatorname{Var}_r(Q_R)$. The minimum is attained with a finite pure reference and a finite conserving measurement. The spectrum may contain arbitrary finite real charges and degeneracies. A compact $U(1)$ description requires a common system-apparatus charge lattice after scalar shifts; the theorem itself only needs additive charge conservation.
+Here $F_Q$ is the symmetric logarithmic derivative quantum Fisher information, normalized so that $F_Q(|r\rangle,Q_R)=4\mathrm{Var}_r(Q_R)$. The minimum is attained with a finite pure reference and a finite conserving measurement. The spectrum may contain arbitrary finite real charges and degeneracies. A compact $U(1)$ description requires a common system-apparatus charge lattice after scalar shifts; the theorem itself only needs additive charge conservation.
 
 The optimization allows arbitrary collective invariant POVMs, a finite neutral pointer, classical randomness, and consumption of the reference. All initially coherent helpers belong to $R$. It charges neither circuit complexity nor apparatus dimension, energy, measurement-outcome count, or reference restoration. It optimizes over the design rather than promising the same optimum for every prescribed SIC, set of mutually unbiased bases, or continuous Haar ensemble.
 
@@ -54,9 +54,9 @@ $$
 \leq \frac{4V_AF_R}{4V_A+F_R}.
 $$
 
-This parameter-gauge argument is an application of established finite-reference and QFI methods. In particular, Šafránek, Ahmadi, and Fuentes derive the pure-state QFI remaining after a reference-frame twirl as the initial variance minus a sum of squared covariances. Their Theorem III.2, Eq. (30), followed by a classical regression bound, already supplies the pure-reference obstruction used here ([`Safranek2015`](https://arxiv.org/html/1404.6421v1)). The mixed-reference extension can also be obtained from the convex-roof identity $F_Q/4=\min\sum_jw_j\operatorname{Var}_{r_j}(Q_R)$ proved by Yu ([`Yu2013`](https://arxiv.org/abs/1302.5311v1)). The gauge proof handles mixed references directly. Neither QFI monotonicity, gauge optimization, the twirl-covariance identity, nor the convex-roof identity is claimed as a new metrological principle.
+This parameter-gauge argument is an application of established finite-reference and QFI methods. In particular, Šafránek, Ahmadi, and Fuentes derive the pure-state QFI remaining after a reference-frame twirl as the initial variance minus a sum of squared covariances. Their Theorem III.2, Eq. (30), followed by a classical regression bound, already supplies the pure-reference obstruction used here ([`Safranek2015`](https://arxiv.org/html/1404.6421v1)). The mixed-reference extension can also be obtained from the convex-roof identity $F_Q/4=\min\sum_jw_j\mathrm{Var}_{r_j}(Q_R)$ proved by Yu ([`Yu2013`](https://arxiv.org/abs/1302.5311v1)). The gauge proof handles mixed references directly. Neither QFI monotonicity, gauge optimization, the twirl-covariance identity, nor the convex-roof identity is claimed as a new metrological principle.
 
-For pure conditional states with mean $I/D$, write $v=\operatorname{Var}_x\langle Q_A\rangle_x$. The bound becomes
+For pure conditional states with mean $I/D$, write $v=\mathrm{Var}_x\langle Q_A\rangle_x$. The bound becomes
 
 $$
 v\geq\frac{V_A^2}{V_A+F_R/4}.
@@ -85,7 +85,7 @@ $$
 \qquad F_R=4(K-1)V_A.
 $$
 
-Draw $N\sim\operatorname{Multinomial}(K;1/D,\ldots,1/D)$ and independent third-root phases $\phi_i$. The output vectors are
+Draw $N\sim\mathrm{Multinomial}(K;1/D,\ldots,1/D)$ and independent third-root phases $\phi_i$. The output vectors are
 
 $$
 |\psi_{N,\phi}\rangle
@@ -106,13 +106,13 @@ This identity supplies exactly the diagonal weights required in every charge sec
 
 Scott proves that tight rank-one informationally complete POVMs are precisely weighted complex projective 2-designs, with the appropriate normalization ([`Scott2006`](https://arxiv.org/html/quant-ph/0604049v6), Proposition 13 and Eq. (61)). Zhu and Hayashi identify the corresponding Fisher-symmetric measurement condition at the maximally mixed state ([`Zhu2018`](https://arxiv.org/html/1709.06112v2), Proposition 1 and Supplement V, Eqs. (S56)-(S59)). This is the single-copy, maximally mixed-state statement; their paper also treats distinct collective-measurement questions. The information trade-offs underlying Fisher symmetry belong to the established Gill-Massar framework ([`Gill2000`](https://doi.org/10.1103/PhysRevA.61.042312)).
 
-For the steering ensemble, the effective POVM on $B$ is $E_x=Dp_x\rho_x^T$. For a traceless Hermitian $H$, the local statistical model $\sigma_\theta=e^{\theta H}/\operatorname{Tr}(e^{\theta H})$ has classical Fisher information
+For the steering ensemble, the effective POVM on $B$ is $E_x=Dp_x\rho_x^T$. For a traceless Hermitian $H$, the local statistical model $\sigma_\theta=e^{\theta H}/\mathrm{Tr}(e^{\theta H})$ has classical Fisher information
 
 $$
-J_H(0)=\sum_xp_x\big[\operatorname{Tr}(H\rho_x^T)\big]^2.
+J_H(0)=\sum_xp_x\big[\mathrm{Tr}(H\rho_x^T)\big]^2.
 $$
 
-An exact 2-design gives $J_H(0)=\operatorname{Tr}(H^2)/[D(D+1)]$. Consequently the reference optimum also applies to the class of tight rank-one informationally complete measurements implemented in this conserving model. The design/frame/Fisher equivalence is inherited; the optimized physical reference cost is the result supplied here.
+An exact 2-design gives $J_H(0)=\mathrm{Tr}(H^2)/[D(D+1)]$. Consequently the reference optimum also applies to the class of tight rank-one informationally complete measurements implemented in this conserving model. The design/frame/Fisher equivalence is inherited; the optimized physical reference cost is the result supplied here.
 
 ### Amplitude and phase constructions
 
@@ -140,9 +140,9 @@ Thus fixed positive additive error is attainable with $K=O(1/\delta)$ and refere
 A stronger operational criterion is two-sided relative Fisher isotropy. For rank-one effects, impose, for every traceless $H$,
 
 $$
-(1-\varepsilon)\frac{\operatorname{Tr}(H^2)}{D(D+1)}
+(1-\varepsilon)\frac{\mathrm{Tr}(H^2)}{D(D+1)}
 \leq J_H(0)\leq
-(1+\varepsilon)\frac{\operatorname{Tr}(H^2)}{D(D+1)},
+(1+\varepsilon)\frac{\mathrm{Tr}(H^2)}{D(D+1)},
 \qquad 0\leq\varepsilon<1.
 $$
 
@@ -156,7 +156,7 @@ For the count-and-phase family, the Fisher eigenvalues relative to the exact-des
 
 The qualification matters physically. Extra information in a charge direction is not itself detrimental to tomography. With $K=O(1/\varepsilon)$, this same family already achieves a competitive one-sided lower Fisher bound in every direction, while enhancing diagonal information. Exact rank one and two-sided isotropy are therefore essential to the stated large cost. The theorem does not establish an exponential resource requirement for useful tomography, mixed-effect approximate measurements, or ordinary additive approximate designs. Nor does a positive-semidefinite multiplicative sandwich for the state moment automatically imply the required relative charge-variance estimate: the witness $(Q_A-\mu I)\otimes(Q_A-\mu I)$ is indefinite.
 
-The distinction from direct preparation is also explicit. Starting with $|u\rangle=D^{-1/2}\sum_i|i\rangle$, diagonal Kraus operators $K_x=\sqrt{Dp_x}\operatorname{diag}(\psi_{x1},\ldots,\psi_{xD})$ prepare any pure ensemble with average $I/D$. They commute with $Q_A$, and the input has QFI $4V_A$. This is a direct-preparation upper bound with initial coherence on the prepared system. The steering theorem fixes that system initially at $I/D$ and permits operations only on its partner and an independent reference.
+The distinction from direct preparation is also explicit. Starting with $|u\rangle=D^{-1/2}\sum_i|i\rangle$, diagonal Kraus operators $K_x=\sqrt{Dp_x}\mathrm{diag}(\psi_{x1},\ldots,\psi_{xD})$ prepare any pure ensemble with average $I/D$. They commute with $Q_A$, and the input has QFI $4V_A$. This is a direct-preparation upper bound with initial coherence on the prepared system. The steering theorem fixes that system initially at $I/D$ and permits operations only on its partner and an independent reference.
 
 ## Projected ensembles and deep thermalization
 

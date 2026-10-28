@@ -6,7 +6,7 @@ $$
 |\psi_{N,\phi}\rangle
 =\sum_{i=1}^D\sqrt{\frac{N_i}{K}}\,e^{i\phi_i}|i\rangle,
 \qquad
-N\sim\operatorname{Multinomial}(K;1/D,\ldots,1/D),
+N\sim\mathrm{Multinomial}(K;1/D,\ldots,1/D),
 $$
 
 using a reference with QFI $4(K-1)V_A$. Independent phases chosen from three values suffice. At $K=D+1$, these states form an exact complex projective 2-design and their reference cost is $4D V_A$, matching the [converse](reference_bound.md).
@@ -42,7 +42,7 @@ Each reference factor has the uniform label-charge distribution, mean charge $-\
 
 $$
 F_Q(|r_K\rangle,Q_R)
-=4\operatorname{Var}_{r_K}(Q_R)
+=4\mathrm{Var}_{r_K}(Q_R)
 =4(K-1)V_A.
 $$
 
@@ -92,7 +92,7 @@ $$
 =|i\rangle_B\otimes
 \frac{1}{\sqrt{C_{i,N}}}
 \sum_{\substack{(i_1,\ldots,i_{K-1})\\
-\operatorname{count}(i_1,\ldots,i_{K-1})=N-e_i}}
+\mathrm{count}(i_1,\ldots,i_{K-1})=N-e_i}}
 |i_1,\ldots,i_{K-1}\rangle_R.
 $$
 
@@ -246,7 +246,7 @@ $$
 It is the sample mean of $K$ independent uniformly chosen charges. Hence
 
 $$
-\operatorname{Var}(m_N)=\frac{V_A}{K}
+\mathrm{Var}(m_N)=\frac{V_A}{K}
 =\frac{V_A^2}{V_A+F_Q(|r_K\rangle,Q_R)/4}
 \quad\text{when }V_A>0.
 $$
@@ -333,12 +333,12 @@ Embedding the compressed reference with $J$ also shows that every unnormalized c
 $$
 \begin{aligned}
 \widetilde\tau_x
-&=\operatorname{Tr}_{B\widetilde R}\!\left[
+&=\mathrm{Tr}_{B\widetilde R}\!\left[
 (I_A\otimes\widetilde M_x)
 (|\Omega\rangle\langle\Omega|\otimes
 |\widetilde r_K\rangle\langle\widetilde r_K|)
 \right]\\
-&=\operatorname{Tr}_{BR}\!\left[
+&=\mathrm{Tr}_{BR}\!\left[
 (I_A\otimes M_x)
 (|\Omega\rangle\langle\Omega|\otimes|r_K\rangle\langle r_K|)
 \right]

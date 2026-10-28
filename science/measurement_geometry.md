@@ -13,15 +13,15 @@ Use the maximally entangled state $|\Omega\rangle=D^{-1/2}\sum_i|i\rangle_A|i\ra
 Let $E_x$ be the effective POVM on $B$. It can be written without any commutation assumption on $\rho_R$ as
 
 $$
-E_x=\operatorname{Tr}_R\!\left[
+E_x=\mathrm{Tr}_R\!\left[
 (I_B\otimes\rho_R^{1/2})M_x(I_B\otimes\rho_R^{1/2})\right].
 $$
 
 It is positive and sums to $I_B$. The maximally entangled identity gives
 
 $$
-p_x=\frac{\operatorname{Tr}E_x}{D},\qquad
-\rho_x=\frac{E_x^{\mathsf T}}{\operatorname{Tr}E_x},\qquad
+p_x=\frac{\mathrm{Tr}E_x}{D},\qquad
+\rho_x=\frac{E_x^{\mathsf T}}{\mathrm{Tr}E_x},\qquad
 E_x=Dp_x\rho_x^{\mathsf T}.
 \tag{1}
 $$
@@ -31,15 +31,15 @@ All transposes refer to the chosen charge basis. Zero effects are omitted. Defin
 Write
 
 $$
-\mu=\frac{\operatorname{Tr}Q_A}{D},\qquad
-V_A=\frac1D\operatorname{Tr}(Q_A-\mu I)^2,\qquad
+\mu=\frac{\mathrm{Tr}Q_A}{D},\qquad
+V_A=\frac1D\mathrm{Tr}(Q_A-\mu I)^2,\qquad
 F_R=F_Q(\rho_R,Q_R).
 $$
 
 The [reference bound for pure outputs](reference_bound.md#3-pure-ensembles-and-their-conditional-charge-means) is
 
 $$
-v:=\operatorname{Var}_x\operatorname{Tr}(Q_A\rho_x)
+v:=\mathrm{Var}_x\mathrm{Tr}(Q_A\rho_x)
 \geq\frac{V_A^2}{V_A+F_R/4}.
 \tag{2}
 $$
@@ -53,28 +53,28 @@ Mixed reference states are allowed. Exact rank one concerns the effective measur
 For any traceless Hermitian matrix $H$, consider the state family on $B$
 
 $$
-\sigma_\theta=\frac{e^{\theta H}}{\operatorname{Tr}e^{\theta H}}.
+\sigma_\theta=\frac{e^{\theta H}}{\mathrm{Tr}e^{\theta H}}.
 $$
 
-At $\theta=0$, the state is $I/D$ and its derivative is $H/D$. The outcome probability $r_x(\theta)=\operatorname{Tr}(E_x\sigma_\theta)$ obeys
+At $\theta=0$, the state is $I/D$ and its derivative is $H/D$. The outcome probability $r_x(\theta)=\mathrm{Tr}(E_x\sigma_\theta)$ obeys
 
 $$
 r_x(0)=p_x,\qquad
-r_x'(0)=p_x\operatorname{Tr}(HP_x).
+r_x'(0)=p_x\mathrm{Tr}(HP_x).
 $$
 
 Its classical Fisher information is therefore
 
 $$
 J(H)=\sum_x\frac{r_x'(0)^2}{r_x(0)}
-=\sum_xp_x[\operatorname{Tr}(HP_x)]^2.
+=\sum_xp_x[\mathrm{Tr}(HP_x)]^2.
 \tag{3}
 $$
 
-The quantum Fisher information of this model at zero is $\operatorname{Tr}(H^2)/D$, because the SLD is $H$. The symmetric single-copy benchmark is
+The quantum Fisher information of this model at zero is $\mathrm{Tr}(H^2)/D$, because the SLD is $H$. The symmetric single-copy benchmark is
 
 $$
-J_{\mathrm H}(H)=\frac{\operatorname{Tr}(H^2)}{D(D+1)}.
+J_{\mathrm H}(H)=\frac{\mathrm{Tr}(H^2)}{D(D+1)}.
 \tag{4}
 $$
 
@@ -85,11 +85,11 @@ It is a fraction $1/(D+1)$ of the quantum Fisher information in every direction.
 On the real vector space of traceless Hermitian matrices, with Hilbert–Schmidt inner product, define
 
 $$
-\mathcal C(H)=\sum_xp_x\operatorname{Tr}(HP_x)(P_x-I/D).
+\mathcal C(H)=\sum_xp_x\mathrm{Tr}(HP_x)(P_x-I/D).
 \tag{5}
 $$
 
-Then $J(H)=\operatorname{Tr}[H\mathcal C(H)]$. A tight rank-one informationally complete POVM has $\mathcal C=c\,\operatorname{id}$ on this space, for a positive constant $c$.
+Then $J(H)=\mathrm{Tr}[H\mathcal C(H)]$. A tight rank-one informationally complete POVM has $\mathcal C=c\,\mathrm{id}$ on this space, for a positive constant $c$.
 
 For completeness, the equivalence with an exact weighted state 2-design follows directly. If
 
@@ -101,25 +101,25 @@ $$
 then contracting with $H\otimes H$ gives $J(H)=J_{\mathrm H}(H)$. Conversely, suppose equality holds in every traceless Hermitian direction. Polarization determines the bilinear form on pairs of traceless Hermitian matrices. The first moment $\sum_xp_xP_x=I/D$ fixes the identity direction and the cross terms. Hence, for all Hermitian $X,Y$,
 
 $$
-\sum_xp_x\operatorname{Tr}(XP_x)\operatorname{Tr}(YP_x)
-=\frac{\operatorname{Tr}(XY)+\operatorname{Tr}X\operatorname{Tr}Y}{D(D+1)}.
+\sum_xp_x\mathrm{Tr}(XP_x)\mathrm{Tr}(YP_x)
+=\frac{\mathrm{Tr}(XY)+\mathrm{Tr}X\mathrm{Tr}Y}{D(D+1)}.
 \tag{7}
 $$
 
 Products of Hermitian operator bases span the Hermitian operators on two copies, so (7) implies (6). Simultaneous transpose leaves $I+S$ invariant, which makes the condition equivalent for $P_x$ and $\rho_x$.
 
-It remains to check the value of the tight-frame constant. Let $\{H_a\}_{a=1}^{D^2-1}$ be an orthonormal traceless Hermitian basis, with $\operatorname{Tr}(H_aH_b)=\delta_{ab}$. Rank one gives
+It remains to check the value of the tight-frame constant. Let $\{H_a\}_{a=1}^{D^2-1}$ be an orthonormal traceless Hermitian basis, with $\mathrm{Tr}(H_aH_b)=\delta_{ab}$. Rank one gives
 
 $$
 \begin{aligned}
 \sum_{a=1}^{D^2-1}J(H_a)
-&=\sum_xp_x\left[\operatorname{Tr}(P_x^2)-\frac1D\right]\\
+&=\sum_xp_x\left[\mathrm{Tr}(P_x^2)-\frac1D\right]\\
 &=1-\frac1D.
 \end{aligned}
 \tag{8}
 $$
 
-If $\mathcal C=c\,\operatorname{id}$, its trace is $(D^2-1)c$, so $c=1/[D(D+1)]$. This constant is positive, which also implies informational completeness on the traceless space; the normalization supplies the identity direction. Thus the following are equivalent for a rank-one POVM:
+If $\mathcal C=c\,\mathrm{id}$, its trace is $(D^2-1)c$, so $c=1/[D(D+1)]$. This constant is positive, which also implies informational completeness on the traceless space; the normalization supplies the identity direction. Thus the following are equivalent for a rank-one POVM:
 
 1. Its normalized effects form a weighted complex projective 2-design.
 2. It is tight and informationally complete.
@@ -167,23 +167,23 @@ For the diagonal part, let $h_i=H_{ii}$, with $\sum_i h_i=0$. Using the multinom
 $$
 \mathbb E\left(\sum_i h_i\frac{N_i}{K}\right)^2
 =(\alpha_K-\beta_K)\sum_i h_i^2
-=\frac{\operatorname{Tr}(H_{\mathrm{diag}}^2)}{KD}.
+=\frac{\mathrm{Tr}(H_{\mathrm{diag}}^2)}{KD}.
 $$
 
 For the off-diagonal part, phase averaging pairs $H_{ij}$ with $H_{ji}$. It removes its cross terms with the diagonal part, giving
 
 $$
-\mathbb E\left[\operatorname{Tr}(H_{\mathrm{off}}P_x)\right]^2
+\mathbb E\left[\mathrm{Tr}(H_{\mathrm{off}}P_x)\right]^2
 =\beta_K\sum_{i\ne j}|H_{ij}|^2
-=\frac{K-1}{KD^2}\operatorname{Tr}(H_{\mathrm{off}}^2).
+=\frac{K-1}{KD^2}\mathrm{Tr}(H_{\mathrm{off}}^2).
 $$
 
 Therefore the full Fisher quadratic form is
 
 $$
 \boxed{
-J_K(H)=\frac{\operatorname{Tr}(H_{\mathrm{diag}}^2)}{KD}
- +\frac{K-1}{KD^2}\operatorname{Tr}(H_{\mathrm{off}}^2).
+J_K(H)=\frac{\mathrm{Tr}(H_{\mathrm{diag}}^2)}{KD}
+ +\frac{K-1}{KD^2}\mathrm{Tr}(H_{\mathrm{off}}^2).
 }
 \tag{11}
 $$
@@ -311,11 +311,11 @@ The large cost in Section 4 consequently concerns two-sided isotropy. It is not 
 
 ## 6. Why exact rank one matters
 
-For arbitrary positive effects, the normalized operators $P_x=E_x/\operatorname{Tr}E_x$ may be mixed. The statistical formula (3) remains valid, but the frame trace becomes
+For arbitrary positive effects, the normalized operators $P_x=E_x/\mathrm{Tr}E_x$ may be mixed. The statistical formula (3) remains valid, but the frame trace becomes
 
 $$
 \sum_{a=1}^{D^2-1}J(H_a)
-=\sum_xp_x\operatorname{Tr}(P_x^2)-\frac1D
+=\sum_xp_x\mathrm{Tr}(P_x^2)-\frac1D
 \leq1-\frac1D.
 \tag{20}
 $$

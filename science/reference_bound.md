@@ -29,11 +29,11 @@ $$
 Transposition refers to these paired bases. Thus $(Q_A+Q_B)|\Omega\rangle=0$. Adding a scalar multiple of the identity to either charge only changes this sharp total charge and has no effect on the results. Define
 
 $$
-\mu=\frac{\operatorname{Tr}Q_A}{D},
+\mu=\frac{\mathrm{Tr}Q_A}{D},
 \qquad
 H=Q_A-\mu I_A,
 \qquad
-V_A=\frac{\operatorname{Tr}H^2}{D}.
+V_A=\frac{\mathrm{Tr}H^2}{D}.
 $$
 
 The reference $R$ is any finite-dimensional system in a state $\rho_R$, initially independent of $AB$. It includes every additional source of initial asymmetry used by the apparatus. Its charge is $Q_R$, and its charged resource is
@@ -69,20 +69,20 @@ F_Q(\rho,Q)
 |\langle a|Q|b\rangle|^2.
 $$
 
-In particular, $F_Q(|\psi\rangle,Q)=4\operatorname{Var}_{\psi}(Q)$. The statistical interpretation of this QFI, and hence its monotonicity under a parameter-independent quantum channel, follows from the optimization over measurements in [Braunstein and Caves](https://doi.org/10.1103/PhysRevLett.72.3439).
+In particular, $F_Q(|\psi\rangle,Q)=4\mathrm{Var}_{\psi}(Q)$. The statistical interpretation of this QFI, and hence its monotonicity under a parameter-independent quantum channel, follows from the optimization over measurements in [Braunstein and Caves](https://doi.org/10.1103/PhysRevLett.72.3439).
 
 The unnormalized conditional state of $A$ is
 
 $$
 \tau_x=
-\operatorname{Tr}_{BR}\!\left[
+\mathrm{Tr}_{BR}\!\left[
 (I_A\otimes M_x^{1/2})
 (|\Omega\rangle\langle\Omega|\otimes\rho_R)
 (I_A\otimes M_x^{1/2})
 \right].
 $$
 
-Write $p_x=\operatorname{Tr}\tau_x$ and $\rho_x=\tau_x/p_x$ when $p_x>0$. These states depend only on the effects $M_x$, not on a choice of instrument on $BR$: operators acting solely on the traced subsystem can be cycled inside the partial trace. Completeness consequently gives the no-signalling identity
+Write $p_x=\mathrm{Tr}\tau_x$ and $\rho_x=\tau_x/p_x$ when $p_x>0$. These states depend only on the effects $M_x$, not on a choice of instrument on $BR$: operators acting solely on the traced subsystem can be cycled inside the partial trace. Completeness consequently gives the no-signalling identity
 
 $$
 \sum_x p_x\rho_x=\frac{I_A}{D}.
@@ -107,7 +107,7 @@ Let $C$ be the neutral classical record. The map from an arbitrary input operato
 $$
 \mathcal M(X)
 =\sum_x |x\rangle\langle x|_C\otimes
-\operatorname{Tr}_{BR}\!\left[
+\mathrm{Tr}_{BR}\!\left[
 (I_A\otimes M_x^{1/2})X(I_A\otimes M_x^{1/2})
 \right].
 $$
@@ -189,7 +189,7 @@ The bound is stronger than the separate inequalities $\mathcal F_{\mathrm{out}}\
 For a pure conditional ensemble, define
 
 $$
-m_x=\operatorname{Tr}(Q_A\rho_x),
+m_x=\mathrm{Tr}(Q_A\rho_x),
 \qquad
 v=\sum_x p_x(m_x-\mu)^2.
 $$
@@ -197,8 +197,8 @@ $$
 No signalling fixes $\sum_xp_xm_x=\mu$. It also fixes the average second charge moment. Therefore
 
 $$
-\sum_x p_x\operatorname{Var}_{\rho_x}(Q_A)
-=\frac{\operatorname{Tr}Q_A^2}{D}-\sum_xp_xm_x^2
+\sum_x p_x\mathrm{Var}_{\rho_x}(Q_A)
+=\frac{\mathrm{Tr}Q_A^2}{D}-\sum_xp_xm_x^2
 =V_A-v.
 $$
 
@@ -217,12 +217,12 @@ In particular, a finite reference cannot generate a pure ensemble whose charge e
 There is also a charge-sector interpretation of this inequality. For a pure reference, refine the outcome by the value $t$ of $T$. If the original conditional state is pure, every nonzero refined conditional state must equal it, since a pure state has no nontrivial decomposition into distinct states. The resulting classical variables obey
 
 $$
-\operatorname{Cov}(m_x,T)=-V_A,
+\mathrm{Cov}(m_x,T)=-V_A,
 \qquad
-\operatorname{Var}(T)=V_A+\operatorname{Var}_{\rho_R}(Q_R).
+\mathrm{Var}(T)=V_A+\mathrm{Var}_{\rho_R}(Q_R).
 $$
 
-The first identity follows from the sharp total charge of $AB$ and the independence of $R$; refining a commuting measurement preserves the joint expectation of $Q_A$ and $T$. Cauchy–Schwarz gives Corollary 2 because a pure reference has $F_R=4\operatorname{Var}(Q_R)$. This is the same conditional-charge information that appears in the finite-reference QFI loss formula of [Šafránek, Ahmadi, and Fuentes](https://arxiv.org/abs/1404.6421). Theorem 1 avoids a decomposition of a mixed reference and applies without assuming pure outputs.
+The first identity follows from the sharp total charge of $AB$ and the independence of $R$; refining a commuting measurement preserves the joint expectation of $Q_A$ and $T$. Cauchy–Schwarz gives Corollary 2 because a pure reference has $F_R=4\mathrm{Var}(Q_R)$. This is the same conditional-charge information that appears in the finite-reference QFI loss formula of [Šafránek, Ahmadi, and Fuentes](https://arxiv.org/abs/1404.6421). Theorem 1 avoids a decomposition of a mixed reference and applies without assuming pure outputs.
 
 ## 4. Exact second moments force purity
 
@@ -237,26 +237,26 @@ $$
 The condition $M_2=M_{\mathrm H}$ is the second-moment condition for a weighted exact complex projective 2-design. Even if the $\rho_x$ were initially allowed to be mixed, this equality would force them to be pure:
 
 $$
-\sum_x p_x\operatorname{Tr}\rho_x^2
-=\operatorname{Tr}(\mathsf S M_2)
-=\operatorname{Tr}(\mathsf S M_{\mathrm H})
+\sum_x p_x\mathrm{Tr}\rho_x^2
+=\mathrm{Tr}(\mathsf S M_2)
+=\mathrm{Tr}(\mathsf S M_{\mathrm H})
 =1.
 $$
 
 Each purity is at most one. Consequently every term of nonzero weight has purity one. Thus the exact second-moment target already includes the purity needed in Corollary 2.
 
-Since $\operatorname{Tr}H=0$ and $\operatorname{Tr}H^2=DV_A$, the same target fixes the conditional-mean variance:
+Since $\mathrm{Tr}H=0$ and $\mathrm{Tr}H^2=DV_A$, the same target fixes the conditional-mean variance:
 
 $$
 \begin{aligned}
 v
-&=\operatorname{Tr}\!\left[(H\otimes H)M_{\mathrm H}\right]\\
-&=\frac{(\operatorname{Tr}H)^2+\operatorname{Tr}H^2}{D(D+1)}
+&=\mathrm{Tr}\!\left[(H\otimes H)M_{\mathrm H}\right]\\
+&=\frac{(\mathrm{Tr}H)^2+\mathrm{Tr}H^2}{D(D+1)}
 =\frac{V_A}{D+1}.
 \end{aligned}
 $$
 
-The identity $\operatorname{Tr}[(X\otimes Y)\mathsf S]=\operatorname{Tr}(XY)$ gives the second line. Inserting this value of $v$ into Corollary 2 proves the exact design converse when $V_A>0$. For $V_A=0$, the same conclusion follows from nonnegativity of QFI.
+The identity $\mathrm{Tr}[(X\otimes Y)\mathsf S]=\mathrm{Tr}(XY)$ gives the second line. Inserting this value of $v$ into Corollary 2 proves the exact design converse when $V_A>0$. For $V_A=0$, the same conclusion follows from nonnegativity of QFI.
 
 **Theorem 3.** Every allowed protocol with $M_2=M_{\mathrm H}$ satisfies
 
@@ -282,7 +282,7 @@ If $V_A=0$, then $Q_A=\mu I_A$ and $Q_B$ is scalar. A one-dimensional reference 
 The result also has a measurement interpretation. The effective POVM on $B$ is
 
 $$
-E_x=\operatorname{Tr}_R\!\left[
+E_x=\mathrm{Tr}_R\!\left[
 (I_B\otimes\rho_R^{1/2})M_x(I_B\otimes\rho_R^{1/2})
 \right],
 \qquad

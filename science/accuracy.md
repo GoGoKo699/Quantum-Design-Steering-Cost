@@ -26,16 +26,16 @@ The record is neutral, $A$ is not acted on, and all outcomes are retained. Any a
 Write
 
 $$
-\mu=\frac{\operatorname{Tr}Q_A}{D},\qquad
-V_A=\frac{1}{D}\operatorname{Tr}(Q_A-\mu I)^2,
+\mu=\frac{\mathrm{Tr}Q_A}{D},\qquad
+V_A=\frac{1}{D}\mathrm{Tr}(Q_A-\mu I)^2,
 \qquad
 F_R=F_Q(\rho_R,Q_R).
 $$
 
-We use SLD quantum Fisher information, normalized so that $F_Q(|r\rangle,Q_R)=4\operatorname{Var}_r(Q_R)$. The conditional ensemble obeys $\sum_xp_x\rho_x=I/D$. For pure conditional states, the [reference bound](reference_bound.md#3-pure-ensembles-and-their-conditional-charge-means) is
+We use SLD quantum Fisher information, normalized so that $F_Q(|r\rangle,Q_R)=4\mathrm{Var}_r(Q_R)$. The conditional ensemble obeys $\sum_xp_x\rho_x=I/D$. For pure conditional states, the [reference bound](reference_bound.md#3-pure-ensembles-and-their-conditional-charge-means) is
 
 $$
-v:=\operatorname{Var}_x\!\left[\operatorname{Tr}(Q_A\rho_x)\right]
+v:=\mathrm{Var}_x\!\left[\mathrm{Tr}(Q_A\rho_x)\right]
 \geq \frac{V_A^2}{V_A+F_R/4}.
 \tag{1}
 $$
@@ -73,7 +73,7 @@ The second is an operator inequality on two copies. It is not the same condition
 For an integer $K\geq1$, let
 
 $$
-N=(N_1,\ldots,N_D)\sim\operatorname{Multinomial}
+N=(N_1,\ldots,N_D)\sim\mathrm{Multinomial}
 \left(K;\frac1D,\ldots,\frac1D\right).
 $$
 
@@ -147,7 +147,7 @@ At $K=D+1$, the second term vanishes and $M_K=M_{\mathrm H}$. Together with (5),
 
 ### 2.3 Half trace-norm error
 
-Both moments vanish on the antisymmetric subspace. On the symmetric subspace, use the orthogonal decomposition into $\operatorname{span}\{|ii\rangle\}$ and $\operatorname{span}\{(|ij\rangle+|ji\rangle)/\sqrt2:i<j\}$. Put $c_K=1/K-1/(D+1)$. The spectrum of the difference is
+Both moments vanish on the antisymmetric subspace. On the symmetric subspace, use the orthogonal decomposition into $\mathrm{span}\{|ii\rangle\}$ and $\mathrm{span}\{(|ij\rangle+|ji\rangle)/\sqrt2:i<j\}$. Put $c_K=1/K-1/(D+1)$. The spectrum of the difference is
 
 | Subspace | Dimension | Eigenvalue of $M_K-M_{\mathrm H}$ |
 | --- | ---: | --- |
@@ -326,7 +326,7 @@ The example uses pure conditional states, exact conservation, a finite reference
 For arbitrary conditional states $\rho_x$, define the mean impurity and the charge range by
 
 $$
-p_{\mathrm{imp}}=1-\sum_xp_x\operatorname{Tr}(\rho_x^2),
+p_{\mathrm{imp}}=1-\sum_xp_x\mathrm{Tr}(\rho_x^2),
 \qquad
 \Delta q=q_{\max}-q_{\min}.
 $$
@@ -350,7 +350,7 @@ Choose any pure-state decomposition
 $$
 \rho_R=\sum_jw_j|r_j\rangle\langle r_j|,
 \qquad
-V_j=\operatorname{Var}_{r_j}(Q_R).
+V_j=\mathrm{Var}_{r_j}(Q_R).
 $$
 
 This is a mathematical decomposition, not access to a free physical label. For each pure component, refine the effect by the spectral projectors $\Pi_t$ of $T$:
@@ -359,16 +359,16 @@ $$
 M_{x,t}=\Pi_tM_x\Pi_t.
 $$
 
-Commutation with $T$ ensures $\sum_tM_{x,t}=M_x$. Conditional on $j$, let $\rho_{jxt}$ be the normalized state of $A$ after the refined outcome, and put $a_{jxt}=\operatorname{Tr}(Q_A\rho_{jxt})$. Zero-probability branches can be omitted.
+Commutation with $T$ ensures $\sum_tM_{x,t}=M_x$. Conditional on $j$, let $\rho_{jxt}$ be the normalized state of $A$ after the refined outcome, and put $a_{jxt}=\mathrm{Tr}(Q_A\rho_{jxt})$. Zero-probability branches can be omitted.
 
 Completeness of the refined POVM gives, for every $j$,
 
 $$
 \mathbb E[a\mid j]=\mu,
 \qquad
-\operatorname{Var}(t\mid j)=V_A+V_j,
+\mathrm{Var}(t\mid j)=V_A+V_j,
 \qquad
-\operatorname{Cov}(a,t\mid j)=-V_A.
+\mathrm{Cov}(a,t\mid j)=-V_A.
 \tag{21}
 $$
 
@@ -377,7 +377,7 @@ For clarity, the last identity follows from $\sum_{x,t}tM_{x,t}=T$. Hence $\math
 Cauchy–Schwarz applied to (21) gives
 
 $$
-\operatorname{Var}(a\mid j)\geq\frac{V_A^2}{V_A+V_j}.
+\mathrm{Var}(a\mid j)\geq\frac{V_A^2}{V_A+V_j}.
 $$
 
 All conditional means over $j$ equal $\mu$, so the fully refined variance satisfies
@@ -385,7 +385,7 @@ All conditional means over $j$ equal $\mu$, so the fully refined variance satisf
 $$
 \begin{aligned}
 v_{\mathrm{fine}}
-&=\sum_jw_j\operatorname{Var}(a\mid j)\\
+&=\sum_jw_j\mathrm{Var}(a\mid j)\\
 &\geq\sum_jw_j\frac{V_A^2}{V_A+V_j}
 \geq\frac{V_A^2}{V_A+\sum_jw_jV_j},
 \end{aligned}
@@ -401,14 +401,14 @@ For a fixed retained outcome $x$, write its refined decomposition as $\rho_x=\su
 $$
 v_{\mathrm{fine}}-v
 =\sum_x\frac{p_x}{2}\sum_{y,z}\lambda_{y|x}\lambda_{z|x}
-\left[\operatorname{Tr}Q_A(\rho_y-\rho_z)\right]^2.
+\left[\mathrm{Tr}Q_A(\rho_y-\rho_z)\right]^2.
 \tag{23}
 $$
 
 For any two density operators $\rho,\sigma$, trace-norm duality after subtracting the midpoint of the charge spectrum yields
 
 $$
-|\operatorname{Tr}Q_A(\rho-\sigma)|
+|\mathrm{Tr}Q_A(\rho-\sigma)|
 \leq \Delta q\,D_{\mathrm{tr}}(\rho,\sigma),
 \qquad
 D_{\mathrm{tr}}(\rho,\sigma)=\frac12\|\rho-\sigma\|_1.
@@ -418,7 +418,7 @@ $$
 We also need
 
 $$
-D_{\mathrm{tr}}(\rho,\sigma)^2\leq1-\operatorname{Tr}(\rho\sigma).
+D_{\mathrm{tr}}(\rho,\sigma)^2\leq1-\mathrm{Tr}(\rho\sigma).
 \tag{25}
 $$
 
@@ -429,7 +429,7 @@ $$
 D_{\mathrm{tr}}(\rho,\sigma)
 &\leq\sum_{a,b}r_as_b\sqrt{1-|\langle\psi_a|\varphi_b\rangle|^2}\\
 &\leq\sqrt{1-\sum_{a,b}r_as_b|\langle\psi_a|\varphi_b\rangle|^2}
-=\sqrt{1-\operatorname{Tr}(\rho\sigma)}.
+=\sqrt{1-\mathrm{Tr}(\rho\sigma)}.
 \end{aligned}
 $$
 
@@ -440,9 +440,9 @@ $$
 v_{\mathrm{fine}}-v
 &\leq\frac{(\Delta q)^2}{2}
 \sum_xp_x\sum_{y,z}\lambda_{y|x}\lambda_{z|x}
-\left[1-\operatorname{Tr}(\rho_y\rho_z)\right]\\
+\left[1-\mathrm{Tr}(\rho_y\rho_z)\right]\\
 &=\frac{(\Delta q)^2}{2}
-\sum_xp_x\left[1-\operatorname{Tr}(\rho_x^2)\right]
+\sum_xp_x\left[1-\mathrm{Tr}(\rho_x^2)\right]
 =\frac{(\Delta q)^2}{2}p_{\mathrm{imp}}.
 \end{aligned}
 \tag{26}
@@ -455,7 +455,7 @@ The established convex-roof identity for SLD quantum Fisher information is
 $$
 \frac14F_Q(\rho_R,Q_R)
 =\inf_{\rho_R=\sum_jw_j|r_j\rangle\langle r_j|}
-\sum_jw_j\operatorname{Var}_{r_j}(Q_R).
+\sum_jw_j\mathrm{Var}_{r_j}(Q_R).
 \tag{27}
 $$
 
@@ -468,9 +468,9 @@ For a qubit with charges $+1$ and $-1$, use a trivial reference and retain only 
 An exact second-moment target forces pure outputs even if purity was not separately imposed. Indeed,
 
 $$
-\operatorname{Tr}(SM_2)=\sum_xp_x\operatorname{Tr}(\rho_x^2),
+\mathrm{Tr}(SM_2)=\sum_xp_x\mathrm{Tr}(\rho_x^2),
 \qquad
-\operatorname{Tr}(SM_{\mathrm H})=1.
+\mathrm{Tr}(SM_{\mathrm H})=1.
 $$
 
 Every density operator has purity at most one, so $M_2=M_{\mathrm H}$ implies that every positive-weight $\rho_x$ is pure. For an additive-error target, (2) instead gives the quantitative bound $p_{\mathrm{imp}}\leq2\delta$ by trace-norm duality. The multiplicative criterion (3) is different: its upper inequality forces $M_2$ to have zero weight on the antisymmetric subspace, whose weight is $p_{\mathrm{imp}}/2$. Thus (3) already forces exact purity. The counterexample in Section 3 satisfies this stronger requirement.
